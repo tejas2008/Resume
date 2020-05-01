@@ -24,9 +24,9 @@
     <title>Prdouct App</title>
 </head>
 <body>
-  <div class="loader-wrapper">
-    <span class="loader"><span class="loader-inner"></span></span>
-</div>
+  <div id="overlay">
+    <div class="spinner"></div> 
+    </div>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <div id="particles-js">
         <div class="btext">
@@ -72,10 +72,10 @@
                   <a href="https://github.com/tejas2008/SkillGrader">https://github.com/tejas2008/SkillGrader</a>
                 </li><br>
                 <li>
-                  <h3>GarbageGrieveanceManagementSystem</h3>
+                  <h3>GrieveanceManagement</h3>
                   <p>A street garbage grievance management system made for the HacknCode 3.0 Provides a simple dashboard for users to upload grievances with an image and the location. Still a work under progress.</p>
                   <p>Technoligies Used : Node.js | Keras | Tensorflow | HTML | CSS | JavaScript | Python</p>
-                  <a href="https://github.com/tejas2008/GarbageGrieveanceManagementSystem">https://github.com/tejas2008/GarbageGrieveanceManagementSystem</a>
+                  <a href="https://github.com/tejas2008/GarbageGrieveanceManagementSystem">https://github.com/tejas2008/Garbage</a>
                 </li><br>
                 <li>
                   <h3>Flask-website</h3>
@@ -163,9 +163,11 @@
           </section>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-      $(window).on("load",function(){
-     $(".loader-wrapper").fadeOut("fast");
-});
+      var overlay = document.getElementById("overlay");
+
+window.addEventListener('load', function(){
+  overlay.style.display = 'none';
+  });
     </script>
     <script>
         particlesJS.load('particles-js', 'particles.json',
