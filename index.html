@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -24,11 +21,12 @@
     <meta charset="UTF-8">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
     <title>Prdouct App</title>
 </head>
 <body>
- 
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <div id="particles-js">
         <div class="btext">
@@ -42,7 +40,6 @@
       <div class="education" style="max-width: 1000px;margin: 0 auto;padding-bottom: 50px;">
         <div class="card-deck" >
           <div class="card" style="border: black;">
-            <!-- <img src="..." class="card-img-top" alt="..."> -->
             <div class="card-body">
               <h2 class="card-title">School</h2>
               <hr style="height:2px;border-width:0;color:gray;background-color:gray">
@@ -52,13 +49,11 @@
             </div>
           </div>
           <div class="card" style="border: black;">
-            <!-- <img src="..." class="card-img-top" alt="..."> -->
             <div class="card-body">
               <h2 class="card-title">College</h2>
               <hr style="height:2px;border-width:0;color:gray;background-color:gray">
 
               <p class="card-text"><h2>K.J. Somaiya College Of Engineering</h2></p>
-              <!-- <p class="card-text">Computer Enginnering</p> -->
               <p class="card-text"><small class="text-muted">2018-2022</small></p>
             </div>
           </div>
@@ -72,19 +67,19 @@
               <ul style="list-style-type: disc;">
                 <li>
                   <h3>SkillGrader</h3>
-                  <p>Educational Apps nowadays have certified courses but it is not a proof whether the student actually has gained knowledge about the subject . Thus Skill Grader Solves that problem by providing a testing platform for your such skills with direct intervention and reviewing by the tutor and grades based on the same . Only on getting a certain a particular grades will the student recieve a certificate and thus will be a proof of mastery of the student in particular course</p>
+                  <p>Skill Grader Solves that problem by providing a testing platform for your such skills with direct intervention and reviewing by the tutor and grades based on the same.</p>
                   <p>Technoligies Used : Node.js | mysql | bootstrap | HTML | CSS | JavaScript</p>
                   <a href="https://github.com/tejas2008/SkillGrader">https://github.com/tejas2008/SkillGrader</a>
                 </li><br>
                 <li>
                   <h3>GarbageGrieveanceManagementSystem</h3>
-                  <p>A street garbage grievance management system made for the HacknCode 3.0 Provides a simple dashboard for users to upload grievances with an image and the location. Analyses the data and provides useful heatmaps and graphs. Still a work under progress.</p>
+                  <p>A street garbage grievance management system made for the HacknCode 3.0 Provides a simple dashboard for users to upload grievances with an image and the location. Still a work under progress.</p>
                   <p>Technoligies Used : Node.js | Keras | Tensorflow | HTML | CSS | JavaScript | Python</p>
                   <a href="https://github.com/tejas2008/GarbageGrieveanceManagementSystem">https://github.com/tejas2008/GarbageGrieveanceManagementSystem</a>
                 </li><br>
                 <li>
                   <h3>Flask-website</h3>
-                  <p>The Project site was implenmented in accordance to an in-house internship undertaken by me. It consisted of a group proejct at the end of the learning internship in Flask. Thus given below is the repository of the website prepared by me and my group members.  </p>
+                  <p>The Project site was implenmented in accordance to an in-house internship undertaken by me. It consisted of a group proejct at the end of the learning internship in Flask. </p>
                   <p>Technoligies Used : Flask | HTML | CSS | JavaScript | Heroku Hsoting</p>
                   <a href="https://github.com/tejas2008/Flask-website">https://github.com/tejas2008/Flask-website</a>
                 </li>
@@ -92,8 +87,8 @@
             </div>
 
           </section>
-          <section style="background-color: #ffffff;">
-            <h1 style="text-align: center;padding-bottom: 15px; padding-top: 10px; ">SKILLS</h1>
+          <section style="background-color: #ffffff;padding-bottom: 20px;">
+            <h1 style="text-align: center;padding-bottom: 20px; padding-top: 20px; ">SKILLS</h1>
             <div class="skills" style="max-width: 1000px;margin: 0 auto;padding-bottom: 20px;">
               <div class="left_skill">
                 <ol style="list-style-type: none;">
@@ -163,16 +158,21 @@
               <h1 style="text-align: center;">Contact Me</h1>
               <p style="text-align: center;"><a href="mailto:khanolkar.tejas08@gmail.com"><i class="far fa-envelope fa-3x" style="color: purple;"></i></a></p>
             <p style="text-align: center;">Do share your views and feel free to contact me anytime <i class="fas fa-heart"style="color:red;"></i></p>
-          <p style="text-align: center;"><i class="far fa-copyright"></i>Tejas Khanolkar</p>  
+          <p style="text-align: center;"><i class="far fa-copyright"></i> Tejas Khanolkar</p>  
           </div>
           </section>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
+    <script>
+      $(window).on("load",function(){
+     $(".loader-wrapper").fadeOut("fast");
+});
+    </script>
     <script>
         particlesJS.load('particles-js', 'particles.json',
         function(){
             console.log('particles.json loaded...');
         });
     </script>
+
 </body>
 </html>
